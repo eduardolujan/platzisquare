@@ -6,19 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  a = 2;
-  b = 3;
-  listo = false;
-  contador = 0;
-  nombre = '';
-  apellido = '';
-  constructor() {
-      setTimeout(() => { this.listo = true; }, 3000);
-  }
+    lugares:any = [
+        { active: true, name: 'Huellas felices' },
+        { active: true, name: 'Donas delis' },
+        { active: false, name: 'Mapache feliz' }
 
-  onClickButton(element) {
-      console.log(element);
-      ++this.contador;
-  }
+    ];
+
+    constructor() {
+
+    }
 }

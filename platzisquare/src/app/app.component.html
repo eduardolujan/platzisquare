@@ -1,15 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Test Welcome to {{ title }}!
-  </h1>
-  <h2> {{ a + b }}</h2>
-  <h3>Contador {{contador}}</h3>
-  <button [disabled]="!listo" (click)="onClickButton(this)">Clickeame!!</button>
-  <input type="text" name="nombre" [(ngModel)]="nombre" />
-  <p>Mi nombre es <label>{{ nombre }} {{ apellido }}</label></p>
-  <input type="text" name="apellido" [(ngModel)]="apellido">
-</div>
+<ul>
+  <ng-container  *ngFor="let lugar of lugares;">
+    <li *ngIf="lugar.active">{{ lugar.name }}</li>
+  </ng-container>
+</ul>
 
 
 
