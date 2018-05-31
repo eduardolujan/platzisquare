@@ -6,15 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    lugares:any = [
-        { active: true, name: 'Huellas felices' },
-        { active: true, name: 'Donas delis' },
-        { active: false, name: 'Mapache feliz' }
-
+    persons: any = [
+        {age: 12, name: 'Eduardo Lujan'},
+        {age: 21, name: 'Fernando Zaldivar'},
+        {age: 12, name: 'Franco Lopez'},
+        {age: 19, name: 'Guadalupe Gonzales'},
+        {age: 81, name: 'Jorge Rivas'},
+        {age: 54, name: 'Juan Perez'},
     ];
-
-    lat: number = 19.702075;
-    lng: number = -101.192885;
 
     constructor() {
 
