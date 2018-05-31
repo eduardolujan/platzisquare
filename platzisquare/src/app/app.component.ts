@@ -13,6 +13,9 @@ export class AppComponent {
 
     ];
 
+    lat: number = 19.702075;
+    lng: number = -101.192885;
+
     constructor() {
 
     }
